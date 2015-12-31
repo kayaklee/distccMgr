@@ -44,4 +44,5 @@ crontab -l
 
 mkdir -p cmd
 echo -e "$SLAVE_DEPLOY_CMD" >cmd/slave_deploy.sh; chmod 775 cmd/slave_deploy.sh
-echo -e "$DISTCC_INSTALL_CMD" >cmd/distcc_install.sh; chmod 775 cmd/distcc_install.sh
+echo -e "$DISTCC_INSTALL_CMD" >cmd/distcc_install.sh
+echo -e "$CLIENT_CRON_DEPLOY" >>cmd/distcc_install.sh; chmod 775 cmd/distcc_install.sh
