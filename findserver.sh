@@ -10,7 +10,7 @@ do
   then
     sts=`cat ./run/$line`
     let interval=$ts-$sts
-    if [ $interval -le 60 ]
+    if [ $interval -le 120 ]
     then
       list=`echo $line:$port $list`
     fi
